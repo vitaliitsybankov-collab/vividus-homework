@@ -1,0 +1,122 @@
+Initialized native services in: C:\Users\Vitalii_Tsybankov\.gradle\native
+Initialized jansi services in: C:\Users\Vitalii_Tsybankov\.gradle\native
+Removing 0 daemon stop events from registry
+Starting a Gradle Daemon (subsequent builds will be faster)
+Starting process 'Gradle build daemon'. Working directory: C:\Users\Vitalii_Tsybankov\.gradle\daemon\9.4.0 Command: C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot\bin\java.exe --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED -XX:MaxMetaspaceSize=384m -XX:+HeapDumpOnOutOfMemoryError -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -cp C:\Users\Vitalii_Tsybankov\.gradle\wrapper\dists\gradle-9.4.0-bin\lcvyxq3t37f6mx9miaydrrgs\gradle-9.4.0\lib\gradle-daemon-main-9.4.0.jar -javaagent:C:\Users\Vitalii_Tsybankov\.gradle\wrapper\dists\gradle-9.4.0-bin\lcvyxq3t37f6mx9miaydrrgs\gradle-9.4.0\lib\agents\gradle-instrumentation-agent-9.4.0.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 9.4.0
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 1.097 secs.
+The client will now receive all logging from the daemon (pid: 29720). The daemon log file: C:\Users\Vitalii_Tsybankov\.gradle\daemon\9.4.0\daemon-29720.out.log
+Starting build in new daemon [memory: 512 MiB]
+Using 16 worker leases.
+Operational build model parameters: {cachingModelBuilding=false, configurationCache=false, configurationCacheDisabledReason=null, configurationCacheParallelLoad=false, configurationCacheParallelStore=false, configureOnDemand=false, invalidateCoupledProjects=false, isolatedProjects=false, modelAsProjectDependency=false, modelBuilding=false, parallelModelBuilding=false, parallelProjectConfiguration=false, parallelProjectExecution=false, resilientModelBuilding=false}
+Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot, JAVA_VERSION=21.0.11, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=21.0.11+10-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=21.0.11+10-LTS, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
+Watching the file system is configured to be enabled if available
+Now considering [C:\vh] as hierarchies to watch
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'C:\vh\settings.gradle'.
+Using local directory build cache for the root build (location = C:\Users\Vitalii_Tsybankov\.gradle\caches\build-cache-1, remove unused entries = after 7 days).
+Projects loaded. Root project using build file 'C:\vh\build.gradle'.
+Included projects: [root project 'vh']
+
+> Configure project :
+Evaluating root project 'vh' using build file 'C:\vh\build.gradle'.
+All projects evaluated.
+Task name matched 'testVividusInitialization'
+Selected primary task 'testVividusInitialization' from project :
+Tasks to be executed: [task ':compileJava', task ':processResources', task ':classes', task ':compileTestJava', task ':processTestResources', task ':testClasses', task ':test', task ':testVividusInitialization']
+Tasks that were excluded: []
+Resolve mutations for :compileJava (Thread[#104,Execution worker,5,main]) started.
+:compileJava (Thread[#104,Execution worker,5,main]) started.
+
+> Task :compileJava NO-SOURCE
+Skipping task ':compileJava' as it has no source files and no previous output files.
+Resolve mutations for :processResources (Thread[#104,Execution worker,5,main]) started.
+:processResources (Thread[#104,Execution worker,5,main]) started.
+
+> Task :processResources UP-TO-DATE
+Caching disabled for task ':processResources' because:
+  Not worth caching
+Skipping task ':processResources' as it is up-to-date.
+Resolve mutations for :classes (Thread[#104,Execution worker,5,main]) started.
+:classes (Thread[#104,Execution worker,5,main]) started.
+
+> Task :classes UP-TO-DATE
+Skipping task ':classes' as it has no actions.
+Resolve mutations for :compileTestJava (Thread[#104,Execution worker,5,main]) started.
+:compileTestJava (Thread[#104,Execution worker,5,main]) started.
+
+> Task :compileTestJava NO-SOURCE
+Skipping task ':compileTestJava' as it has no source files and no previous output files.
+Resolve mutations for :processTestResources (Thread[#104,Execution worker,5,main]) started.
+:processTestResources (Thread[#104,Execution worker,5,main]) started.
+
+> Task :processTestResources NO-SOURCE
+Skipping task ':processTestResources' as it has no source files and no previous output files.
+Resolve mutations for :testClasses (Thread[#104,Execution worker,5,main]) started.
+:testClasses (Thread[#104,Execution worker,5,main]) started.
+
+> Task :testClasses UP-TO-DATE
+Skipping task ':testClasses' as it has no actions.
+Resolve mutations for :test (Thread[#115,Execution worker Thread 12,5,main]) started.
+:test (Thread[#115,Execution worker Thread 12,5,main]) started.
+
+> Task :test NO-SOURCE
+Skipping task ':test' as it has no source files and no previous output files.
+Resolve mutations for :testVividusInitialization (Thread[#115,Execution worker Thread 12,5,main]) started.
+:testVividusInitialization (Thread[#115,Execution worker Thread 12,5,main]) started.
+
+> Task :testVividusInitialization FAILED
+Custom actions are attached to task ':testVividusInitialization'.
+Caching disabled for task ':testVividusInitialization' because:
+  Caching has not been enabled for the task
+Task ':testVividusInitialization' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Starting process 'command 'C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot\bin\java.exe''. Working directory: C:\vh Command: C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot\bin\java.exe -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant org.vividus.runner.VividusInitializationChecker
+Successfully started process 'command 'C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot\bin\java.exe''
+[32m2026-07-30 10:54:52,890 [main] INFO  org.vividus.log.TestInfoLogger - 
+  _   _______   _________  __  ______
+ | | / /  _/ | / /  _/ _ \/ / / / __/
+ | |/ // / | |/ // // // / /_/ /\ \  
+ |___/___/ |___/___/____/\____/___/  
+                                     
+
+[m[32m2026-07-30 10:54:52,969 [main] INFO  org.vividus.configuration.PropertiesLoader - Loading properties from /deprecated
+[m[32m2026-07-30 10:54:52,969 [main] INFO  org.vividus.configuration.PropertiesLoader - Loading properties from /org/vividus/http/client
+[m[32m2026-07-30 10:54:52,969 [main] INFO  org.vividus.configuration.PropertiesLoader - Loading properties from /org/vividus/util
+[m[32m2026-07-30 10:54:52,982 [main] INFO  org.vividus.configuration.PropertiesLoader - Loading properties from /defaults
+[m[32m2026-07-30 10:54:52,985 [main] INFO  org.vividus.configuration.PropertiesLoader - Loading properties from /
+[mException in thread "main" java.lang.IllegalStateException: No files with properties were found at location with pattern: classpath*:/properties/profile/web/desktop/chrome/*.properties
+	at org.vividus.configuration.PropertiesLoader.collectResources(PropertiesLoader.java:140)
+	at org.vividus.configuration.PropertiesLoader.collectResourcesRecursively(PropertiesLoader.java:119)
+	at org.vividus.configuration.PropertiesLoader.loadFromResourceTreeRecursively(PropertiesLoader.java:80)
+	at org.vividus.configuration.PropertiesLoader.loadFromResourceTreeRecursively(PropertiesLoader.java:87)
+	at org.vividus.configuration.ConfigurationResolver.getInstance(ConfigurationResolver.java:111)
+	at org.vividus.configuration.BeanFactory.getActiveProfiles(BeanFactory.java:125)
+	at org.vividus.configuration.BeanFactory.open(BeanFactory.java:59)
+	at org.vividus.configuration.Vividus.init(Vividus.java:44)
+	at org.vividus.runner.VividusInitializationChecker.main(VividusInitializationChecker.java:45)
+
+[Incubating] Problems report is available at: file:///C:/vh/output/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':testVividusInitialization'.
+> Process 'command 'C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot\bin\java.exe'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.4.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 9s
+2 actionable tasks: 1 executed, 1 up-to-date
+Watched directory hierarchies: [C:\vh]
