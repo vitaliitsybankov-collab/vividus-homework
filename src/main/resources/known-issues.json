@@ -1,2 +1,14 @@
 {
+  "demowebshop-wishlist-button-missing": {
+    "type": "EXTERNAL",
+    "assertionPattern": ".*add-to-wishlist-button.*",
+    "testCasePattern": ".*wishlist.*",
+    "description": "The 'Add to wishlist' control is not present on the live demowebshop.tricentis.com site (checked both the /desktops category listing and individual product detail pages). Other QA projects testing this same demo instance have independently reported this as a known issue, indicating a site-side limitation rather than an automation defect."
+  },
+  "epam-corporate-overview-report-removed": {
+    "type": "EXTERNAL",
+    "assertionPattern": ".*number of found elements.*Actual: <0>.*",
+    "testStepPattern": ".*corporate overview.*",
+    "description": "The hometask specifies downloading the 'EPAM Corporate Overview 2023' report from the 'EPAM at a Glance' section of epam.com/about. As of the current live site, no report by this name exists anywhere on the page - only the UK Modern Slavery Statement, Code of Ethical Conduct, and a Nordic Sustainability report are present. This indicates EPAM discontinued or relocated this specific report since the hometask was authored, not an automation defect."
+  }
 }

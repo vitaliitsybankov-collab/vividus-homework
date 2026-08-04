@@ -1,10 +1,13 @@
 Description: Task 1.9 - Verify the ability to download a report
-!-- NOTE: No "EPAM Corporate Overview 2023" report from the "EPAM at a Glance" section can be found
-!-- on [About page](https://www.epam.com/about).
-!-- The check instead confirms the link is present and well-formed, which still validates
-!-- the feature: a report is discoverable and its href resolves to a PDF.
+!-- KNOWN ISSUE (see known-issues.json, key "epam-corporate-overview-report-removed"):
+!-- The hometask specifies downloading the "EPAM Corporate Overview 2023" report from
+!-- the "EPAM at a Glance" section. As of the current live site, no report by this name
+!-- exists anywhere on /about - the only PDFs present are the UK Modern Slavery
+!-- Statement, Code of Ethical Conduct, and a Nordic Sustainability report. This
+!-- indicates EPAM discontinued or relocated this specific report since the hometask
+!-- was authored, not a locator defect. Left active (not @skip) so it runs and
+!-- produces real evidence of the missing report, classified as a Known Issue.
 
-Scenario: Verify a report download link is present and well-formed
+Scenario: Verify the "EPAM Corporate Overview" report is available to download
 Given I am on page with URL `https://www.epam.com/about`
-When I save `href` attribute value of element located by `xpath((//a[contains(@href,'.pdf')])[1])` to scenario variable `report-url`
-Then `${report-url}` matches `https://.*\.pdf$`
+Then number of elements found by `xpath(//a[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'corporate overview')])` is greater than or equal to `1`
